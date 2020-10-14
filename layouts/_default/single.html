@@ -32,7 +32,9 @@
             </div>
         </article>
 
+        {{- if .Params.tags }}
         <hr />
+        {{- end }}
 
         <div class="post-info">
             {{ partial "tags.html" . }}
