@@ -14,6 +14,9 @@
             {{ if .Site.Author.name }}
                 <span><a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a></span>
             {{ end }}
+            {{ if .Site.Params.SourceURL }}
+                <span><a href="{{ .Site.Params.SourceURL }}">Source</a></span>
+            {{ end }}
             {{ if .Site.Copyright }}
                 <span>{{ .Site.Copyright| safeHTML }}</span>
             {{ end }}
